@@ -62,8 +62,8 @@ int main(){
     printf("Codigo: %c%02d \n", inic_estado, num_estado);
     printf("Nome da Cidade: %s", cidade);
     printf("População: %i \n", populacao);
-    printf("Área: %.2f \n", area);
-    printf("PIB: %.2f \n", pib);
+    printf("Área: %.2f Km²\n", area);
+    printf("PIB: %.2f bilhões de reais\n", pib);
     printf("Numero de Pontos Turisticos: %i \n \n", pontos_turisticos);
 
     printf("Carta 2 \n");
@@ -71,8 +71,8 @@ int main(){
     printf("Codigo: %c%02d \n", inic_estado_2, num_estado_2);
     printf("Nome da Cidade: %s", cidade_2);
     printf("População: %i \n", populacao_2);
-    printf("Área: %.2f \n", area_2);
-    printf("PIB: %.2f \n", pib_2);
+    printf("Área: %.2f Km²\n", area_2);
+    printf("PIB: %.2f bilhões de reais\n", pib_2);
     printf("Numero de Pontos Turisticos: %i \n", pontos_turisticos_2);
 
 
