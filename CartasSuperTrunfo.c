@@ -59,7 +59,7 @@ int main(){
     densidade_populacional = (float) populacao / area;
     densidade_populacional_2 = (float) populacao_2 / area_2;
     pib_per_capita = (float) pib * 1000000000 / populacao;
-    pib_per_capita_2 = (float) pib_2 * 100000000 / populacao_2;
+    pib_per_capita_2 = (float) pib_2 * 1000000000 / populacao_2;
 
     //INICIO DA EXIBIÇAO DOS RESULTADOS
 
@@ -88,5 +88,5 @@ int main(){
 
     return 0;
 
-    
+
 };
