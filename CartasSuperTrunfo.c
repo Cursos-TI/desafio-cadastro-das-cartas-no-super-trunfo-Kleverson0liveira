@@ -3,10 +3,11 @@
 int main(){
 
     //VARIAVEIS
-    int num_estado, num_estado_2, populacao, populacao_2, pontos_turisticos, pontos_turisticos_2, comp_populacao, comp_area, comp_pib, comp_p_turisticos, comp_densidade_populacional, comp_pib_pc;
+    int num_estado, num_estado_2,  pontos_turisticos, pontos_turisticos_2;
     float area, area_2, pib, pib_2,densidade_populacional,densidade_populacional_2, pib_per_capita,pib_per_capita_2, super_poder, super_poder_2;
     char inic_estado, inic_estado_2;
     char cidade[50], cidade_2[50];
+    unsigned long int populacao, populacao_2, comp_populacao;
 
 
 
@@ -21,7 +22,7 @@ int main(){
     printf("Escolha uma cidade e digite seu nome: ");
     fgets(cidade, 50, stdin);
     printf("Qual a população desta cidade? ");
-    scanf("%d", &populacao);
+    scanf("%lu", &populacao);
     printf("Qual a área em Km² desta cidade? ");
     scanf("%f", &area);
     printf("Qual o valor do PIB da cidade? ");
@@ -45,7 +46,7 @@ int main(){
     printf("Escolha uma cidade e digite seu nome: ");
     fgets(cidade_2, 50, stdin);
     printf("Qual a população desta cidade? ");
-    scanf("%d", &populacao_2);
+    scanf("%lu", &populacao_2);
     printf("Qual a área em Km² desta cidade? ");
     scanf("%f", &area_2);
     printf("Qual o valor do PIB da cidade? ");
@@ -63,14 +64,7 @@ int main(){
     pib_per_capita = (float) pib * 1000000000 / populacao;
     pib_per_capita_2 = (float) pib_2 * 1000000000 / populacao_2;
 
-    // iniciando cauculo comparativo 
-
-    comp_populacao = populacao > populacao_2;
-    comp_area = area > area_2;
-    comp_pib = pib > pib_2;
-    comp_p_turisticos = pontos_turisticos > pontos_turisticos_2;
-    comp_densidade_populacional = densidade_populacional < densidade_populacional_2;
-    comp_pib_pc = pib_per_capita > pib_per_capita_2;
+    
 
     // Super Poder: soma dos atributos numéricos + inverso da densidade populacional
     super_poder = (float) populacao + area + pib + pontos_turisticos + pib_per_capita + (1.0f / densidade_populacional);
@@ -83,7 +77,7 @@ int main(){
     printf("Estado: %c \n", inic_estado);
     printf("Codigo: %c%02d \n", inic_estado, num_estado);
     printf("Nome da Cidade: %s", cidade);
-    printf("População: %d \n", populacao);
+    printf("População: %lu \n", populacao);
     printf("Área: %.2f Km² \n", area);
     printf("PIB: %.2f bilhões de reais\n", pib);
     printf("Numero de Pontos Turisticos: %d \n", pontos_turisticos);
@@ -94,12 +88,12 @@ int main(){
     printf("Estado: %c \n", inic_estado_2);
     printf("Codigo: %c%02d \n", inic_estado_2, num_estado_2);
     printf("Nome da Cidade: %s", cidade_2);
-    printf("População: %d \n", populacao_2);
+    printf("População: %lu \n", populacao_2);
     printf("Área: %.2f Km² \n", area_2);
     printf("PIB: %.2f bilhões de reais \n", pib_2);
     printf("Numero de Pontos Turisticos: %d \n", pontos_turisticos_2);
     printf("Densidade Populacional: %.2f hab/Km²\n", densidade_populacional_2);
-    printf("PIB per Capita: %.2f reais \n", pib_per_capita_2);
+    printf("PIB per Capita: %.2f reais \n \n", pib_per_capita_2);
 
     // exibindo comparaçao entre cardis
     
