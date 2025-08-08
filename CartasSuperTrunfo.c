@@ -7,7 +7,7 @@ int main(){
     float area, area_2, pib, pib_2,densidade_populacional,densidade_populacional_2, pib_per_capita,pib_per_capita_2, super_poder, super_poder_2;
     char inic_estado, inic_estado_2;
     char cidade[50], cidade_2[50];
-    unsigned long int populacao, populacao_2, comp_populacao;
+    unsigned long int populacao, populacao_2;
 
 
 
